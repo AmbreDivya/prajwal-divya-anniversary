@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Prajwal ❤️ Divya</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         LOGIN PAGE
+    ========================== -->
+
+    <div id="loginPage">
+
+        <div class="login-card">
+
+            <div class="login-heart">
+                ❤️
+            </div>
+
+            <h1>
+                A Special Surprise ❤️
+            </h1>
+
+            <p>
+                This little world is made especially for you ✨
+            </p>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter Username ❤️"
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter Password 🔒"
+            >
+
+            <button onclick="checkLogin()">
+                Enter Our Story ❤️
+            </button>
+
+            <p id="loginError"></p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         MAIN WEBSITE
+    ========================== -->
+
+    <div id="mainWebsite" style="display: none;">
+
+
+        <!-- MUSIC BUTTON -->
+
+        <button
+            class="music-button"
+            onclick="toggleMusic()"
+        >
+            🎵
+        </button>
+
+
+        <!-- MUSIC -->
+
+        <audio id="bgMusic" loop>
+
+            <source
+                src="music/song.mp3"
+                type="audio/mpeg"
+            >
+
+        </audio>
+
+
+
+        <!-- =========================
+             PAGE 1 - WELCOME
+        ========================== -->
+
+        <section class="page active" id="page1">
+
+            <div class="glass-card">
+
+                <div class="main-heart">
+                    ❤️
+                </div>
+
+                <h1>
+                    Our Beautiful Story
+                </h1>
+
+                <p>
+                    Prajwal ❤️ Divya
+                </p>
+
+                <p>
+                    A beautiful connection that started online...
+                </p>
+
+                <button onclick="nextPage(2)">
+                    Start Our Story ❤️
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PAGE 2 - INSTAGRAM CHAT
+        ========================== -->
+
+        <section class="page" id="page2">
+
+            <div class="chat-container">
+
+
+                <div class="chat-header">
+
+                    <div class="profile-heart">
+                        ❤️
+                    </div>
+
+
+                    <div class="chat-name">
+
+                        <h3>
+                            Prajwal ❤️ Divya
+                        </h3>
+
+                        <span>
+                            Instagram Connection ✨
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="chat-box">
+
+
+                    <div class="message received">
+                        Heyyy 👋🏻✨
+                    </div>
+
+
+                    <div class="message sent">
+                        Hiiiii 😊🫶🏻
+                    </div>
+
+
+                    <div class="message received">
+                        How are you? 👀🤍
+                    </div>
+
+
+                    <div class="message sent">
+                        I'm gooddd 😄💗 How about you?
+                    </div>
+
+
+                    <div class="message received">
+                        I'm good toooo 😂✨
+                    </div>
+
+
+                    <div class="message sent">
+                        Hehe that's niceee 🤭💕
+                    </div>
+
+
+                    <div class="message received">
+                        I'm really glad we started talking 🥹❤️
+                    </div>
+
+
+                    <div class="message sent">
+                        Awww, me too 🫶🏻💖
+                    </div>
+
+
+                    <div class="message received">
+                        Talking to you feels really nice 😊💌
+                    </div>
+
+
+                    <div class="message sent">
+                        Same hereee 🥹💗✨
+                    </div>
+
+
+                    <div class="message received">
+                        Maybe this is the beginning of something special? 👀❤️‍🩹
+                    </div>
+
+
+                    <div class="message sent">
+                        Maybeeee 🤭🫶🏻💘♾️
+                    </div>
+
+
+                    <div class="message received">
+                        And that's how our beautiful connection started ❤️🥹✨
+                    </div>
+
+
+                </div>
+
+
+
+                <button
+                    class="chat-button"
+                    onclick="nextPage(3)"
+                >
+                    Continue ❤️
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PAGE 3 - SPECIAL DATE
+        ========================== -->
+
+        <section class="page" id="page3">
+
+            <div class="glass-card">
+
+                <div class="calendar-icon">
+                    📅
+                </div>
+
+                <h1>
+                    Our First Connection ❤️
+                </h1>
+
+                <p>
+                    The day our story started...
+                </p>
+
+                <div class="date-card">
+
+                    <div class="special-text">
+                        3 November 2025 ❤️
+                    </div>
+
+                </div>
+
+                <p>
+                    We may not have met in person yet,
+                    but our beautiful connection started online. 🥹❤️
+                </p>
+
+                <button onclick="nextPage(4)">
+                    See Our Journey ❤️
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PAGE 4 - DAYS COUNTER
+        ========================== -->
+
+        <section class="page" id="page4">
+
+            <div class="glass-card">
+
+                <div class="big-heart">
+                    ❤️
+                </div>
+
+                <h1>
+                    Our Journey So Far
+                </h1>
+
+                <p>
+                    Days since our first connection...
+                </p>
+
+                <div class="counter-box">
+
+                    <span id="daysCount">
+                        0
+                    </span>
+
+                    <p>
+                        Beautiful Days ❤️
+                    </p>
+
+                </div>
+
+                <div class="small-hearts">
+                    ❤️ 💕 ❤️ 💕 ❤️
+                </div>
+
+                <button onclick="nextPage(5)">
+                    Our Memories 📸
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PAGE 5 - PHOTO GALLERY
+        ========================== -->
+
+        <section class="page" id="page5">
+
+            <div class="gallery-page">
+
+                <h1>
+                    Our Beautiful Memories 📸❤️
+                </h1>
+
+                <p>
+                    Every picture has a special memory...
+                </p>
+
+
+                <div class="gallery">
+
+
+                    <div class="photo-card">
+
+                        <img
+                            src="images/photo1.jpg"
+                            alt="Memory 1"
+                        >
+
+                        <span>
+                            Our Beautiful Memory ❤️
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="photo-card">
+
+                        <img
+                            src="images/photo2.jpg"
+                            alt="Memory 2"
+                        >
+
+                        <span>
+                            A Special Moment 💕
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="photo-card">
+
+                        <img
+                            src="images/photo3.jpg"
+                            alt="Memory 3"
+                        >
+
+                        <span>
+                            Beautiful Memories ✨
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="photo-card">
+
+                        <img
+                            src="images/photo4.jpg"
+                            alt="Memory 4"
+                        >
+
+                        <span>
+                            My Favorite ❤️
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="photo-card">
+
+                        <img
+                            src="images/photo5.jpg"
+                            alt="Memory 5"
+                        >
+
+                        <span>
+                            Always Special 🥹
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="photo-card">
+
+                        <img
+                            src="images/photo6.jpg"
+                            alt="Memory 6"
+                        >
+
+                        <span>
+                            Us ❤️
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="photo-card small-photo">
+
+                        <img
+                            src="images/photo7.jpg"
+                            alt="Memory 7"
+                        >
+
+                        <span>
+                            Sweet Memory 💗
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="photo-card small-photo">
+
+                        <img
+                            src="images/photo8.jpg"
+                            alt="Memory 8"
+                        >
+
+                        <span>
+                            Beautiful Moments ✨
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="photo-card small-photo">
+
+                        <img
+                            src="images/photo9.jpg"
+                            alt="Memory 9"
+                        >
+
+                        <span>
+                            Our Story ❤️
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="photo-card small-photo">
+
+                        <img
+                            src="images/photo10.jpg"
+                            alt="Memory 10"
+                        >
+
+                        <span>
+                            Special Connection 💕
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="photo-card small-photo">
+
+                        <img
+                            src="images/photo11.jpg"
+                            alt="Memory 11"
+                        >
+
+                        <span>
+                            Forever Memory 🥹❤️
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="photo-card small-photo">
+
+                        <img
+                            src="images/photo12.jpg"
+                            alt="Memory 12"
+                        >
+
+                        <span>
+                            Divya ❤️ Prajwal
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+                <button onclick="nextPage(6)">
+                    Our Story ❤️
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PAGE 6 - OUR STORY
+        ========================== -->
+
+        <section class="page" id="page6">
+
+            <div class="timeline-card">
+
+                <h1>
+                    Our Story ❤️
+                </h1>
+
+
+                <div class="timeline">
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot">
+                            💬
+                        </div>
+
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                It Started Online
+                            </h3>
+
+                            <p>
+                                A simple connection that became special. ❤️
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot">
+                            📱
+                        </div>
+
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Instagram
+                            </h3>
+
+                            <p>
+                                Where Prajwal and Divya's story began. 🥹
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot">
+                            ❤️
+                        </div>
+
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                A Special Connection
+                            </h3>
+
+                            <p>
+                                Even from a distance,
+                                every conversation became special.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <button onclick="nextPage(7)">
+                    A Message For You ❤️
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PAGE 7 - LETTER
+        ========================== -->
+
+        <section class="page" id="page7">
+
+            <div class="letter-card">
+
+                <div class="letter-top">
+                    💌
+                </div>
+
+                <h1>
+                    Happy First Connection Anniversary ❤️
+                </h1>
+
+
+                <div class="letter-text">
+
+
+                    <p>
+                        Dear Prajwal ❤️,
+                    </p>
+
+
+                    <p>
+                        Who knew that one online connection could
+                        become something so special? 🥹❤️
+                    </p>
+
+
+                    <p>
+                        We may not have met in person yet,
+                        but all our conversations and memories
+                        have created something beautiful.
+                    </p>
+
+
+                    <p>
+                        Thank you for being part of my journey
+                        and for making every moment special. ❤️
+                    </p>
+
+
+                    <p class="ending">
+
+                        Here's to our beautiful connection
+                        and many more memories ahead... ❤️✨
+
+                    </p>
+
+
+                    <p class="signature">
+                        Divya ❤️
+                    </p>
+
+
+                </div>
+
+
+                <button onclick="nextPage(8)">
+                    One Last Surprise ❤️
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PAGE 8 - FINAL
+        ========================== -->
+
+        <section class="page" id="page8">
+
+            <div class="final-card">
+
+                <div class="big-heart">
+                    ❤️
+                </div>
+
+                <h1>
+                    Happy First Connection Anniversary
+                </h1>
+
+                <h2>
+                    Prajwal ❤️ Divya
+                </h2>
+
+
+                <div class="final-date">
+
+                    <strong>
+                        3 November 2025
+                    </strong>
+
+                </div>
+
+
+                <p>
+
+                    Our story started with a simple online connection...
+                    and became something truly special. 🥹❤️
+
+                </p>
+
+
+                <div class="small-hearts">
+
+                    ❤️ 💕 ❤️ 💕 ❤️
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
